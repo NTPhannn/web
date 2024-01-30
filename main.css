@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color:rgba(red, green, blue, alpha);
+}
+h1{
+    color:red;
+    font-size: 30px;
+}
+.information-layout {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media (min-width: 740px) {
+    .information-layout {
+        flex-direction: row;
+    }
+}
+.information-item {
+    padding: 12px 16px;
+    margin-top: 16px;
+    flex-basis: 45%;
+}
+.information-item:nth-child(1) {
+    background-color: rgb(192, 227, 222);
+}
+.information-item:nth-child(2) {
+    background-color: rgb(227, 200, 192);
+}
+
+
